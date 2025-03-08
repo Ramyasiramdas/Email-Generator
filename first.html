@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Email Generator</title>
+    <link rel="stylesheet" href="first.css">
+</head>
+<body>
+    <div class="background">
+        <div class="container">
+            <h1>🤖 AI Personalized Email Generator</h1>
+            <div class="form-group">
+                <label for="sender">✍️ Your Name:</label>
+                <input type="text" id="sender" placeholder="Enter your name">
+            </div>
+
+            <div class="form-group">
+                <label for="recipient">📩 Recipient Name:</label>
+                <input type="text" id="recipient" placeholder="Enter recipient name">
+            </div>
+
+            <div class="form-group">
+                <label for="subject">✉️ Email Subject:</label>
+                <input type="text" id="subject" placeholder="Enter subject">
+            </div>
+
+            <div class="form-group">
+                <label for="event">🎉 Event Name:</label>
+                <input type="text" id="event" placeholder="Enter event name">
+            </div>
+
+            <div class="form-group">
+                <label for="instructions">📝 Special Instructions:</label>
+                <textarea id="instructions" placeholder="Enter special instructions"></textarea>
+                <small id="charCount">0/250</small>
+            </div>
+
+            <div class="button-group">
+                <button id="generateBtn" onclick="generateEmail()">⚡ Generate Email</button>
+                <button id="clearBtn" onclick="clearFields()">❌ Clear Fields</button>
+            </div>
+
+            <div id="output-container" class="hidden">
+                <h3>📨 Your AI-Generated Email:</h3>
+                <div id="output" class="output-box"></div>
+                <button id="copyBtn" onclick="copyToClipboard()">📋 Copy to Clipboard</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="first.js"></script>
+</body>
+</html>
